@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 span{
+    color:chocolate;
+}
+
+.logo{
+    width:98.9vw;
+    display:flex;
+    justify-content: center;
+    font-size:40px;
+    background-color: rgb(241, 239, 236);
+    height:80px;
+    margin: -10px;
+    font-size: 35px;
+}
+
+.logo h1{
+    margin-top: -5px;
+}
+
+.form{
+    width:55vw;
+    height:10vh;
+    background-color: #F1ECE6;
+    border-radius:50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add{
+    background-color: cornflowerblue;
+    width: 140px;
+    height: 10vh;
+    border-radius: 0px 50px 50px 0px;
+    color:white;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input{
+    border:0px;
+    background-color: #f1ece600;
+    border-radius: 50px 0px 0px 50px;
+    font-size:32px;
+    color: #969696;
+    padding-left: 35px;
+    width:900px;
+}
+
+.list{
+    width:55vw;
+    height:65vh;
+    background-color: #F1ECE6;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+.task{
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+hr{
+    border: 1px solid cornflowerblue;
+    width:46vw;
+}
+
+.task-check img{
+    width:3vw;
+}
+
+.task-text{
+    flex-grow: 1;
+    font-size: 20px;
+}
