@@ -13,7 +13,7 @@ h1 span{
 }
 
 .logo{
-    width:98.9vw;
+    width:100vw;
     display:flex;
     justify-content: center;
     font-size:40px;
@@ -21,6 +21,7 @@ h1 span{
     height:80px;
     margin: -10px;
     font-size: 35px;
+    align-items: center;
 }
 
 .logo h1{
@@ -47,6 +48,7 @@ h1 span{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition-duration: 0.4s;
 }
 
 .form input{
@@ -65,6 +67,8 @@ h1 span{
     background-color: #F1ECE6;
     border-radius: 50px;
     margin-top: 40px;
+    padding-top: 15px;
+    position:relative;
 }
 
 .task{
@@ -72,18 +76,67 @@ h1 span{
     margin-right: 40px;
     display: flex;
     align-items: center;
-}
-
-hr{
-    border: 1px solid cornflowerblue;
-    width:46vw;
+    margin-top:15px;
 }
 
 .task-check img{
-    width:3vw;
+    width:2vw;
 }
 
 .task-text{
     flex-grow: 1;
     font-size: 20px;
+    border-bottom: 2px solid cornflowerblue;
+    padding-bottom: 10px;
+}
+
+.add:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+    background-color: rgb(40, 109, 237);
+}
+
+.task-check{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.task-delete{
+    display: flex;
+    align-items: center;
+}
+
+.clear-completed{
+    position: absolute;
+    right: 50px;
+    bottom:20px;
+    display: flex;
+    color:#D98326;
+    align-items: center;
+    width:180px;
+    justify-content: space-between;
+}
+
+.clear-completed:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 0.4s;
+}
+
+.done .task-text{
+    text-decoration: line-through;
+}
+
+#checked{
+    display:none;
+}
+
+.done #checked{
+    display: block;
+}
+
+.done #unchecked{
+    display: none;
 }

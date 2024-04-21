@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Tasks</title>
 </head>
+
 <body>
     <div class="logo">
         <h1>TO<span>DO</span></h1>
     </div>
     <div class="form">
-        <input type="text" placeholder="What do you need to do?">
-        <div class="add">
+        <input type="text" placeholder="What do you need to do?" id="new-task">
+        <div class="add" id="add-btn">
             ADD
         </div>
     </div>
     <div class="list">
         <div class="task">
-                <div class="task-check">
-                    <img src="image/Radio button unchecked.svg" alt="">
-                </div>
-                <div class="task-text">
-                    <p>Personal Work No. 1</p>
-                </div>
-                <div class="task-delete">
-                    <img src="image/Delete outline.svg" alt="">
-                </div>
+            <div class="task-check">
+                <img src="image/Vector (3).svg" alt="" id="unchecked">
+                <img src="image/Vector (2).svg" alt="" id="checked">
+            </div>
+            <div class="task-text">
+                <p>Personal Work No. 1</p>
+            </div>
+            <div class="task-delete">
+                <img src="image/Delete outline.svg" alt="">
+            </div>
         </div>
-        <hr>
+        <div class="task done">
+            <div class="task-check">
+                <img src="image/Vector (3).svg" alt="" id="unchecked">
+                <img src="image/Vector (2).svg" alt="" id="checked">
+            </div>
+            <div class="task-text">
+                <p>Personal Work No. 1</p>
+            </div>
+            <div class="task-delete">
+                <img src="image/Delete outline.svg" alt="">
+            </div>
+        </div>
+        <div class="task">
+            <div class="task-check">
+                <img src="image/Vector (3).svg" alt="" id="unchecked">
+                <img src="image/Vector (2).svg" alt="" id="checked">
+            </div>
+            <div class="task-text">
+                <p>Personal Work No. 1</p>
+            </div>
+            <div class="task-delete">
+                <img src="image/Delete outline.svg" alt="">
+            </div>
+        </div>
+        <div class="clear-completed" id="clear-completed">
+            <img src="image/Vector (1).svg" alt="">
+            <h2>Clear Completed</h2>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
